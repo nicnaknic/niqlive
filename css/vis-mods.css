@@ -1,0 +1,324 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/**Button Ripples for button click events**/
+.ripplelink{
+
+  text-align:center;
+  color:#fff;
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index:0;
+}
+
+.ink {
+  display: block;
+  position: absolute;
+  background:rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  -webkit-transform:scale(0);
+     -moz-transform:scale(0);
+       -o-transform:scale(0);
+          transform:scale(0);
+}
+
+.animate {
+	-webkit-animation:ripple 0.65s linear;
+   -moz-animation:ripple 0.65s linear;
+    -ms-animation:ripple 0.65s linear;
+     -o-animation:ripple 0.65s linear;
+        animation:ripple 0.65s linear;
+}
+
+@-webkit-keyframes ripple {
+    100% {opacity: 0; -webkit-transform: scale(2.5);}
+}
+@-moz-keyframes ripple {
+    100% {opacity: 0; -moz-transform: scale(2.5);}
+}
+@-o-keyframes ripple {
+    100% {opacity: 0; -o-transform: scale(2.5);}
+}
+@keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);}
+}
+
+/** TOP PARALLAX NAV ITEMS ==============================**/
+
+#nav{   
+    background: none;
+    border-style: none;
+    
+}
+#nav a{
+    color: white;
+}
+
+.nav-bottom{
+    position: absolute;
+    bottom: 10px;
+    left: 49.5%;
+}
+
+.nav-no-decor{
+    padding-left: 7px;
+    list-style-type: none;
+}
+.nav-top-inline li{
+    display: inline; 
+}
+/** BUTTON ELEMENTS =====================================**/
+
+.btn-mod{
+    margin: 5px 5px 5px 5px;
+    padding: 14px 14px;
+    border-width: 1px 1px 1px 1px;
+    width: 150px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: white;
+    font-weight: 550;
+    font-size: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+
+.btn-mod:focus, .btn-mod:active:focus, .btn-mod:active:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+
+.btn-mod-clean:hover, .btn-mod-clean:focus, .btn-mod-clean:active, .btn-mod-clean.active{
+    outline: none;
+    border-color: white;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+
+/** FONTS/TEXT CHANGES ==================================**/
+
+.title{
+    margin-top: 40px;
+    font-size: 300%;
+    font-weight: 200;
+}
+
+.title-primary{
+    color: #3A7392;
+}
+.title-footer{
+    color: #fff;
+}
+
+.sub-title{
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 150%;
+}
+.sub-title-footer{
+    font-family: 'Open Sans', sans-serif;
+    color: #808080;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.title-small{
+    font-size: 200%;
+    font-weight: 300;
+}
+
+.title-small-primary{
+    color: #598EAB;
+}
+
+emp-it{
+    font-style: italic;
+    font-size: 90%;
+    font-weight: 200;
+    color: #333;
+}
+
+.c-more{
+    font-size: 200%;
+}
+
+.c-more:active, .c-more:hover{
+    
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    font-weight: 100;
+    color: #333;
+}
+.date{
+    font-size: 90%;
+    font-weight: 100;
+    color: #808080;
+}
+.media-link{
+    font-size: 110%;
+    font-weight: 100;
+    color: #808080;
+}
+.media-link:hover{
+    color: #fff;
+}
+.no-style:hover{
+    text-decoration: none;
+}
+.no-style:visited{
+    text-decoration: none;
+}
+
+
+/** VARIOUS SMALL CHANGES ===============================**/
+
+.profile-img{
+    margin: -1;
+    border-radius: 117px; 
+    border-width: 7px; 
+    border-color: #333; 
+    border-style: solid;
+}
+
+.page-header-mod{
+    margin: 30px 0px 30px 0px;
+}
+.page-header-mod-secondary{
+    opacity: 0.3;
+    border-bottom: 1px solid #b3b3b3;
+    margin: 30px 0px 30px 0px;
+}
+.page-header-mod-bottom{
+    opacity: 0.2;
+    border-bottom: 1px solid #808080;
+    margin: 30px 20% 30px 20%;
+}
+.page-header-mod-comments{
+    width: 20%;
+    margin: 0px 0px 10px 0px;
+}
+
+.container-colored{
+    background-color: #FFF1DF;
+}
+.container-colored-bottom{
+    background-color: #333;
+}
+.container-fluid-pad{
+    padding: 0 80px 0 80px;
+}
+
+.inverse-dropdown{
+  background-color: #222;
+  border-style: solid;
+  border-color: #080808;
+}
+.inverse-dropdown>li>a{
+    color: #999;
+}
+.inverse-dropdown>li>a:hover{
+    color: #fff;
+    background-color: #222;
+}
+.inverse-dropdown>li>.active>a{
+    color: #fff;
+    background-color: #080808;
+}
+
+
+.img-container{
+    position: relative;
+    margin-bottom: 15px;
+}
+ .img-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.9s ease;
+}
+.img-container:hover .img-overlay{
+    color: white;
+    opacity: 0.5;
+
+}
+.img-content {
+  white-space: nowrap; 
+  color: white;
+  font-size: 120%;
+  position: absolute;
+  overflow: hidden;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.img-col-padding{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.pop a{
+    color: white;
+}
+
+.btn-submit{
+    width: 100%;
+    margin-top: 8px;
+    color: #fff;
+    background-color: #598EAB;
+    border-color: #2e6da4;
+}
+.btn-submit:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+/** C-MORE ARROW BOUNCE =================================**/
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

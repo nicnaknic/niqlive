@@ -1,0 +1,35 @@
+section {
+    height:100vh;
+    padding-top: 30vh;
+    overflow: auto;
+}
+.sec-mid{
+    height: 400px;
+    padding-top: 190px;
+    padding-bottom: 10px;
+}
+
+.bg-1 {
+	background: url('../resources/pl1b.png') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+    
+}  
+.bg-2 {
+	background: url('../resources/pl2v2.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-3 {
+	background: url('../resources/pl3.png') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-4 {
+	background: url('../resources/pl4.png') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
