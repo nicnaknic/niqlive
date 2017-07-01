@@ -696,7 +696,7 @@
         <div class="pagination-container"><!--PAGINATION CONTAINER | START-->
         <?php
 
-            $mysqli = mysqli_connect("localhost", "p0d7k8w1_p23sd45", 'Nn1029384756', "p0d7k8w1_resumedb");
+            $mysqli = mysqli_connect("localhost", "placeholder", 'placeholder', "placeholder");
             //$mysqli = mysqli_connect("localhost", "root", 'root', "resumedb");
             $dbRowCount = 0;
             if($mysqli -> connect_error){
